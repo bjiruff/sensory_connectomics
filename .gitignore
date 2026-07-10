@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+io/connectomes/*
+io/null_connectomes/*
+io/figs/*
+io/raw/*
+!io/connectomes/.gitkeep
+!io/null_connectomes/.gitkeep
+!io/figs/.gitkeep
+!io/raw/.gitkeep
+nulls_testing.ipynb

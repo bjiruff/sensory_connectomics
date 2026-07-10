@@ -1,0 +1,32 @@
+[project]
+name = "connectomics"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Bruce Ruff"}
+]
+requires-python = ">=3.13,<3.14.1 || >3.14.1"
+dependencies = [
+    "numpy (>=2.4.6,<3.0.0)",
+    "pandas (>=3.0.3,<4.0.0)",
+    "neuprint-python (>=0.6.2,<0.7.0)",
+    "dotenv (>=0.9.9,<0.10.0)",
+    "scipy (>=1.17.1,<2.0.0)",
+    "networkx (>=3.6.1,<4.0.0)",
+    "pygraphviz (>=2.0,<3.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+plotting = [
+    "matplotlib (>=3.11.0,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "plotly (>=6.8.0,<7.0.0)",
+    "umap-learn (>=0.5.12,<0.6.0)"
+]
+jupyter = [
+    "ipykernel (>=7.3.0,<8.0.0)"
+]
