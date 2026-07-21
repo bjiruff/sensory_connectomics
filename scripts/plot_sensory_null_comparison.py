@@ -6,7 +6,7 @@ from connectomics.config.paths import NULL_CONNECTOMES_DIR, FIGS_DIR
 from connectomics.config.consts import MODALITIES
 from connectomics.modeling.significance import empirical_pvalue, benjamini_hochberg
 
-cell_type = "SMP142" # Specify which cell type to plot.
+cell_type = "SMP143" # Specify which cell type to plot.
 dataset = "fafb"      # Specify which dataset to read from.
 alpha = 0.05           # FDR significance threshold.
 
